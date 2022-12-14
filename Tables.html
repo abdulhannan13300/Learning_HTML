@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Tables</title>
+    <style>
+        table,
+        td,
+        th
+        {
+            border: 1px solid black;
+            border-collapse: collapse;
+            line-height: 1.3;
+
+        }
+        table{
+            width: 1000px;
+            height: 500px;
+            font-size: 20px;
+            margin: auto;
+            margin-top: 15px;
+        }
+        td,th{
+            background-color: white;
+            padding: 15px;
+        }
+        th{
+            text-align: left;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="3"> Invoice #12345CAB</th>
+            <th> 18 Jul 2022</th>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <span> <b> Pay To: </b></span><br>
+                The Tech Park <br>
+                123 Willow Street <br>
+                Boulevard, LA - 567892
+            </td>
+            <td colspan="2">
+                <b>Customer:</b>
+                John Lark <br>
+                Dummy Apartments <br>
+                276 Main Street <br>
+                Boulevard, LA - 567891
+            </td>
+        </tr>
+        <tr>
+            <th>Name/Description</th>
+            <th>Qty.</th>
+            <th>MRP</th>
+            <th>Amount</th>
+        </tr>
+        <tr>
+            <td>Biryani</td>
+            <td>3</td>
+            <td>400</td>    
+            <td>1200</td>
+        </tr>
+        <tr>
+            <td>Chocolate Shake</td>
+            <td>3</td>
+            <td>200</td>    
+            <td>600</td>
+        </tr>
+        <tr>
+            <th colspan="3">Subtotal</th>
+            <td>1800</td>
+        </tr>
+        <tr>
+            <th colspan="2">Tax</th>
+            <td>10%</td>
+            <td>180</td>
+        </tr>
+        <tr>
+            <th colspan="3">Grand Total:</th>
+            <td>Rs 1620</td>
+        </tr>
+    </table>
+</body>
+</html>
